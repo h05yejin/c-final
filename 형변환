@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+float f(float x) {//C2668 C2088 E0308
+	return x;
+}
+
+double f(double x) {
+	return x;
+}
+
+int main() {
+	int i = 3;
+	cout << i << endl;
+	cout << f(i) << endl;
+}
