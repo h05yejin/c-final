@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int f(int x) {//C2668 C2088 E0308
+	return x;
+}
+
+int f(int& x) {
+	return x;
+}
+
+int main() {
+	int i = 3;
+	cout << i << endl;
+	cout << f(i) << endl;
+}
